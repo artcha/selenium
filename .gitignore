@@ -1,2 +1,4 @@
 *~
 *.swp
+java/.gradle
+java/build
