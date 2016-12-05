@@ -4,3 +4,4 @@ java/.gradle
 java/build
 python/.cache
 python/__pycache__
+js/node_modules
