@@ -40,3 +40,22 @@ test.describe('Chrome', function() {
 	driver.quit();
     });
 });
+
+test.describe('Internet explorer', function() {
+    var driver;
+
+    test.before(function() {
+	driver = new webdriver.Builder()
+	    .forBrowser('internet explorer')
+	    .build();
+    });
+
+    test.it('should change title', function() {
+	driver.get('https://duckduckgo.com');
+	driver.wait(until.titleIs('DuckDuckGo'), 1000);
+    });
+
+    test.after(function() {
+	driver.quit();
+    });
+});
