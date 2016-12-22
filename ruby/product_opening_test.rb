@@ -59,10 +59,6 @@ describe 'products' do
     text.style('color')
   end
 
-
-  def check_price_styles(reg_price, camp_price)
-  end
-
   it 'should open product page' do
     @driver.navigate.to 'http://localhost/litecart'
     fp = FrontPage.new(@driver)
@@ -105,6 +101,6 @@ describe 'products' do
   end
 
   after(:each) do
-    #@driver.quit
+    @driver.quit
   end
 end
